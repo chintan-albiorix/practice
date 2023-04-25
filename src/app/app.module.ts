@@ -14,9 +14,10 @@ import { UserComponent } from './user/user.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
-    declarations: [AppComponent, BooksComponent, HeaderComponent, StrengthPipe, HighlightDirective, AdminComponent, UserComponent, LoginComponent, RegisterComponent, ProfileComponent],
+    declarations: [AppComponent, BooksComponent, HeaderComponent, StrengthPipe, HighlightDirective, AdminComponent, UserComponent, LoginComponent, RegisterComponent, ProfileComponent, SidebarComponent],
     imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule, BrowserAnimationsModule, MatIconModule],
     bootstrap: [AppComponent]
 })
