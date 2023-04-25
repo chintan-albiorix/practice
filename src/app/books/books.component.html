@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-4" *ngFor="let book of books">
+            <div class="card-wrapper ">
+                <div class="img-wrapper shadow">
+                    <img [src]="book.img" class="card-img-top" [alt]="book.name">
+                </div>
+                <div class="card-desc-main-wrapper shadow">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <strong class="card-text" appHighlight [hoverColor]="'yellow'">{{book.name}}</strong><br>
+                            <span class="card-title">{{book.author}}</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-warning shadow rounded px-2">
+                                <mat-icon>add_shopping_cart</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
